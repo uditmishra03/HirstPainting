@@ -21,11 +21,10 @@ def draw_hirst_painting(matrix_size):
         squirtle.setposition(-300, -300 + i * 50)
         for j in range(matrix_size):
             chosen_color = random.choice(color_list)
-            squirtle.pendown()
             squirtle.dot(20, chosen_color)
-            squirtle.penup()
             squirtle.forward(50)
 
 
-draw_hirst_painting(8)
+squirtle.hideturtle()
+draw_hirst_painting(10)
 screen.exitonclick()
